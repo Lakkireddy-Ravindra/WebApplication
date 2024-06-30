@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: space-between;
+            background-color: black;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+
+        .navigation > li {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .navigation > li > a {
+            text-decoration: none;
+        }
+
+        .navigation a:hover {
+            color: goldenrod;
+        }
+
+        header {
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        li {
+            font-weight: bolder;
+        }
+
+        .main-content {
+            padding: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .cars {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .cars > li {
+            margin: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cars > li > img {
+            height: 300px;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .cars > li > .image-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #252525;
+        }
+
+        footer {
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .contact-details {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+    
+        }
+
+        .contact-details h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-details p {
+            margin: 5px 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #252525;
+        }
+
+        body.dark-mode {
+            background-color: #252525;
+            color: black;
+        }
+
+        .toggle-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .toggle-label {
+            margin-right: 10px;
+        }
+
+        .toggle-switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .toggle-switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #252525;
+            transition: .4s;
+            border-radius: 34px;
+        }
+
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked + .toggle-slider {
+            background-color: black;
+        }
+
+        input:checked + .toggle-slider:before {
+            transform: translateX(26px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Workouts</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Help / FAQ</a></li>
+        </ul>
+    </nav>
+    <div class="toggle-container">
+        <span class="toggle-label"><b>Dark Mode:</b></span>
+        <label class="toggle-switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+    <header>
+        <h1>Welcome to Our Fitness Gym Page</h1>
+    </header>
+
+    <section class="main-content">
+        <h2>Responsive Gym Page</h2>
+    </section>
+    <nav>
+        <ul class="cars">
+            
+            <li><img src="https://i.pinimg.com/originals/b3/4d/4e/b34d4ef2f482c32967863b750eb2623f.jpg" alt="Muscle Map">Muscle Map</li>
+            <li><img src="https://th.bing.com/th/id/OIP.eKApcF4QTdI_dq_J6bE7-wAAAA?rs=1&pid=ImgDetMain" alt="Arms Day">Arms workouts</li>
+            <li><img src="https://i.pinimg.com/originals/35/93/0e/35930e0097ea4ac3591225642ab4e5b0.jpg" alt="Shoulders Day">shoulders workouts</li>
+            <li><img src="https://i.pinimg.com/originals/e9/29/d0/e929d0f9cbbe3050ebd6612b3d10ecf4.jpg" alt="Back Day">Back day workouts</li>
+            <li><img src="https://i.pinimg.com/originals/70/11/84/701184c03c291222a0ed60aeea50017a.jpg" alt="Abs Day">Abs Workouts</li>
+            <li><img src="https://1.bp.blogspot.com/-cnI4q8w80Fs/V7O2MyGKsbI/AAAAAAAADso/6lpJMdzykGwn3yzAFP2OMQyg7aSUvxyNwCLcB/s1600/The%2B5%2BBest%2BChest%2BBuilding%2BExercises%2Bfor%2BBeginning%2BBodybuilders.jpg" alt="Chest Day">Chest Workouts</li>
+            <li><img src="https://i.pinimg.com/736x/f3/16/1b/f3161b488a49861cccd18f9da88ac67b.jpg" alt="Leg Day">Leg Workouts</li>
+            <li><img src="https://th.bing.com/th/id/OIP.m9GykXI9vMB7yvIHlIMfGgHaEK?w=286&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="Lats Day">Lats Workouts</li>
+        </ul>
+    </nav>
+
+    <footer>
+        <div class="contact-details">
+            <h2>&copy; 2024 Fitness Company</h2>
+            <h3>Contact Us</h3>
+            <p>Email: ravindra229@gmail.com</p>
+            <p>Phone: 123-456-7890</p>
+            <p>Address: Bhimavaram town, Andhra Pradesh, India</p>
+        </div>
+    </footer>
+    <script>
+        const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const body = document.body;
+
+        darkModeToggle.addEventListener('change', () => {
+            body.classList.toggle('dark-mode', darkModeToggle.checked);
+        });
+    </script>
+</body>
+</html>
